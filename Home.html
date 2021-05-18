@@ -2,10 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css"/>
     <title>Home page</title>
 </head>
 <body>
-    <header style="text-align:center; border-bottom: solid 1px;">
+    <header>
+        <img src="libri.png" alt="Alternate Text" />
         <h1>
             Magazzino dei libri
         </h1>
@@ -14,7 +16,7 @@
     <div style="display:flex;">
 
         <nav>
-            <div style="border-right: solid 1px; height: 60vh; width: 200px; padding-top: 100px; ">
+            <div class="navBar ">
                 <a href="Home.html">Home</a> <br />
                 <a href="AggiungiLibro.html">Aggiungi libro</a> <br />
                 <a href="Contatti.html">Contatti</a>
@@ -22,7 +24,7 @@
             </div>
         </nav>
 
-        <main style="width:100% ;text-align:center; margin-top:100px; ">
+        <main style="width:100% ;text-align:center; margin:100px; ">
             <table border="1" width="100%" cellpadding="10" cellspacing="3">
                 <thead >
                     <tr>
@@ -34,7 +36,7 @@
                         <th>Elimina</th>
                     </tr> 
                 </thead>
-                <tbody>
+                <tbody id="tbodyStyle">
                     <tr>
                         <td>La Divina Commedia</td>
                         <td>Dante Alighieri</td>
@@ -59,7 +61,7 @@
     </div>
     <footer style="border-top: solid 1px; text-align:center;">
         <h2>Magazzino dei libri </h2>
-        <a href="Contatti.html">Contatti</a>
+        <a href="Contatti.html" id="contatti">Contatti</a>
     </footer>
 </body>
 </html>

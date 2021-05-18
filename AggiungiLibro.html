@@ -2,10 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>Aggiungi libro</title>
 </head>
 <body>
-    <header style="text-align:center; border-bottom: solid 1px;">
+    <header>
+        <img src="libri.png" alt="Alternate Text" />
         <h1>
             Magazzino dei libri
         </h1>
@@ -14,10 +16,11 @@
     <div style="display:flex;">
 
         <nav>
-            <div style="border-right: solid 1px; height: 60vh; width: 200px; padding-top: 100px; ">
+            <div class="navBar ">
                 <a href="Home.html">Home</a> <br />
                 <a href="AggiungiLibro.html">Aggiungi libro</a> <br />
                 <a href="Contatti.html">Contatti</a>
+
             </div>
         </nav>
 
@@ -28,15 +31,14 @@
                 <label>Autore</label>
                 <input type="text" placeholder="Autore" /> <br />
                 <label>Disponibile</label>
-                <label>
-                    <input type="radio" value="disponibile" /> Sì
-                </label>
-                <label>
-                    <input type="radio" value="disponibile" /> No
-                </label> <br />
+                <label>Sì</label>
+                 <input type="radio" value="Sì" name="disponibile"/> 
+                <label>No</label>
+                <input type="radio" value="No" name="disponibile" /> 
+                 <br />
                 <label>ISBN</label>
-                <input type="text" pattern="\d{0,9}" minlength="13" maxlength="13" /> <br />
-
+                <input type="text" pattern="\d{0,9}" minlength="13" maxlength="13" /> <br /> <br />
+                <label></label>
                 <input type="submit" value="Aggiungi libro" />
             </form>
         </main>

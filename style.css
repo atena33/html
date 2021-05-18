@@ -1,0 +1,85 @@
+﻿body
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Agency FB';
+}
+
+header {
+    display: flex;
+    background-color: azure;
+    justify-content: space-between;
+}
+
+header > img {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+}
+
+header > h1 {
+    color:burlywood;
+    margin-right: 50px;
+}
+
+nav {
+    background-color:burlywood;
+
+}
+
+nav:hover{
+    background-color:aqua;
+}
+
+.navBar {
+    height: 60vh;
+    width: 200px;
+    padding-top: 100px;
+}
+ .navBar > a, #contatti {
+    padding: 35px;
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration-line:none;
+    color:rosybrown;
+}
+
+ a:visited {
+     color: red;
+ }
+
+
+ #tbodyStyle > tr:nth-child(odd){
+
+     background-color: azure;
+ }
+
+#tbodyStyle > tr:nth-child(even) {
+    background-color: burlywood;
+}
+
+#tbodyStyle > tr:hover {
+    background-color:gray;
+}
+
+footer {
+    background-color: azure;
+    color: burlywood;
+}
+
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+    margin: 15px;
+}
+
+input, .radio {
+    display: inline-block;
+    float: left;
+    margin:15px;
+}
+
